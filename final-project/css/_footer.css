@@ -1,0 +1,136 @@
+/*Footer*/
+footer .social{
+    display: flex;
+    align-items: center;
+    padding: 28px 65px;
+    background-color: #535253;
+}
+footer .social p{
+    color: #ffffff;
+    font-size: 16px;
+}
+footer .social .icon{
+    width: 29px;
+    height: 24px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background: url('../img/fa-twitter.svg') no-repeat center/contain;
+}
+footer div.contact{
+    background-color: #424242;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 109px 65px;
+}
+footer div div.trekking{
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 306px;
+}
+footer div div.trekking h5{
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+footer div div.trekking p{
+    font-size: 10px;
+    line-height: 20px;
+}
+footer div div.box a{
+    color: #ffffff;
+    line-height: 28px;
+    text-align: right;
+    font-size: 18px;
+}
+footer div div.box .nav{
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+footer div div.box .nav a.footer-link{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.box .nav .footer-link:after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #ffffff;
+    margin: 0 5px;
+}
+.box .nav .footer-link:last-child::after{
+    display: none;
+}
+
+/*@media max-width:768*/
+@media  (max-width: 768px){
+    footer{
+        text-align: center;
+    }
+    .social p{
+        font-size: 12px;
+    }
+    footer .social{
+        justify-content: center;
+        padding: 28px 30px;
+    }
+    .social .icon{
+        width: 25px;
+    }
+    footer > div.contact{
+        flex-direction: column;
+        padding: 40px 45px 30px;
+    }
+    .trekking{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    div.box .nav ~ a{
+        font-size: 14px;
+    }
+    div.box .nav{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}
+
+/*@media max-width:480*/
+@media  (max-width: 480px){
+    .social{
+        padding: 28px 15x;
+    }
+    footer{
+        text-align: center;
+    }    
+
+    .social p{
+        font-size: 12px;
+    }
+    .social{
+        padding: 28px 20px;
+    }
+    .social p:before{
+        width: 25px;
+    }
+    footer > ul{
+        flex-direction: column;
+        padding: 40px 45px 30px;
+    }
+    .trekking{
+        margin-bottom: 40px;
+    }
+    div.box .nav{
+        flex-direction: column;
+    }
+    ul li.box p{
+        font-size: 14px;
+    }
+    ul li.box .nav{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+}

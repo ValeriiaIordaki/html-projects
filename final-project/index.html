@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <header>
+        <a href="#"><div class="logo"></div></a>
+        <span class="menu-button" onclick="this.classList.toggle('open')"></span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#" class="button"></a>
+        </nav>
+    </header>
+    <section class="top">
+        <div class="info">
+            <h1>Our clothing, your comfort</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <a class="chevron" href="#"></a>
+    </section>
+
+    <div class="container">
+        <div class="filter">
+            <input type="checkbox" name="man" id="men" value="men"><label for="men">Men</label>
+            <input type="checkbox" name="woman" id="women" value="women"><label for="women">Women</label>
+            <input type="checkbox" name="child" id="children" value="children"><label for="children">Children</label>
+        </div>
+        <button>see all products</button>
+    </div>
+
+    <section class="men">
+        <span>MEN</span>
+        <div class="carousel">
+            <div class="carousel-link">
+                <span class="number-1">1/5</span>
+                <span class="number-2">1/6</span>
+                <div class="switcher">
+                    <a href="#" class="left"></a>
+                    <a href="#" class="right"></a>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            
+           
+            <div class="product">
+                <div class="atribut">
+                    <div class="size">
+                        <p>Size</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                        <ul>
+                            <li><a href="#">XS</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">XL</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="color">
+                        <label style="background-color: #165eb9"></label>
+                        <label style="background-color: #ffe637"></label>
+                        <label style="background-color: #535253"></label>
+                    </div>
+                </div>
+                <div class="image" style="background-image: url('./img/T-shirt.png');"></div>
+                <div class="description">
+                    <h3>T-Shirt</h3>
+                    <span class="price">5,00 &euro;</span>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="atribut">
+                   <div class="size">
+                        <p>Size</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                        <ul>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">XL</a></li>
+                        </ul>
+                 </div>
+                </div>
+                <div class="image" style="background-image: url('./img/Pans-f.png');"></div>
+                <div class="description">
+                    <h3>Pants FORCLAZ</h3>
+                    <span class="price">30,00 &euro;</span>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="atribut">
+                   <div class="size">
+                        <p>10litri</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                    </div>
+                </div>
+                <div class="image" style="background-image: url('./img/Backpack.png');"></div>
+                <div class="description">
+                    <h3>backpack</h3>
+                    <span class="price">60,00 &euro;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="women">
+        <span>WOMEN</span>
+        <div class="carousel">
+            <div class="carousel-link">
+                <span class="number-1">1/5</span>
+                <span class="number-2">1/6</span>
+                <div class="switcher">
+                    <a href="#" class="left"></a>
+                    <a href="#" class="right"></a>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <div class="atribut">
+                    <div class="size">
+                        <p>Size</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                        <ul>
+                            <li><a href="#">XS</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">XL</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image" style="background-image: url('./img/Giacket.png');"></div>
+                <div class="description">
+                    <h3>Giaket</h3>
+                    <span class="price">60,00 &euro;</span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="atribut">
+                    <div class="size">
+                        <p>Size</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                        <ul>
+                            <li><a href="#">35</a></li>
+                            <li><a href="#">36</a></li>
+                            <li><a href="#">37</a></li>
+                            <li><a href="#">38</a></li>
+                            <li><a href="#">39</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image" style="background-image: url('./img/trekking-shoes.png');"></div>
+                <div class="description">
+                    <h3>trekking shoes</h3>
+                    <span class="price">80,00 &euro;</span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="atribut">
+                    <div class="size">
+                        <p>Size</p>
+                        <span class="size-button" onclick="this.classList.toggle('open')"></span>
+                        <ul>
+                            <li><a href="#">XS</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">XL</a></li>
+                        </ul>
+                    </div>
+                    <div class="color">
+                        <label style="background-color: #d3a7ac"></label>
+                        <label style="background-color: #ffffff"></label>
+                    </div>
+                </div>
+                <div class="image" style="background-image: url('./img/t-shirt-w.png');"></div>
+                <div class="description">
+                    <h3>T-shirt</h3>
+                    <span class="price">20,00 &euro;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="about-us">
+        <h2>About us</h2>
+        <div>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="#" class="icon"></a>
+            <p>“E-commerce psd theme available”</p>
+        </div>
+        <div class="contact">
+            <div class="trekking">
+                <h5>Trekking</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="box">
+                <div class="nav">
+                    <a href="#" class="footer-link">credits</a>
+                    <a href="#" class="footer-link">privacy</a>
+                    <a href="#" class="footer-link">about us</a>
+                    <a href="#" class="footer-link">contact</a>
+                </div>
+                <a href="#">Design by gianluca cosetta</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

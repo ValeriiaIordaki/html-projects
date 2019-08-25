@@ -1,0 +1,140 @@
+/*Filter*/
+.container{
+    font-family: "QuicksandBold", sans-serif;
+    background-color: #f5f6f7;
+    padding: 45px 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Button*/
+.container button{
+    width: 204px;
+    height: 52px;
+    border-radius: 3px;
+    background-color: #aa9b77;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 35px;
+    text-transform: uppercase;
+    user-select: none;
+}
+.container button:hover{
+    box-shadow: 0 0 3px rgb(225, 213, 183), inset 0 0 2px rgba(168, 168, 168, 0.9);
+    border: 2px solid rgb(225, 213, 183);
+}
+.container button:active{
+    background-color: #ffffff;
+    color: #aa9b77;
+}
+
+/*Checkbox*/
+.container .filter{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    max-width: 460px;
+    text-transform: uppercase;
+}
+.container .filter label{
+    margin-right: 61px;
+    color: #333333;
+    font-size: 18px;
+}
+.container .filter label:last-child{
+     margin-right: 0;
+}
+.container .filter input[type="checkbox"]{
+    position: absolute;
+    left: -9999px;
+}
+.container .filter input[type="checkbox"] + label{
+    position: relative;
+    padding: 5px 0 5px 43px;
+    cursor: pointer;
+}
+.container .filter input[type="checkbox"] + label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #cccccc;;
+    background-color: #ffffff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.container .filter input[type="checkbox"] + label:after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    width: 15px;
+    height: 12px;
+    border-radius: 1px;
+    border-left: 4px solid #aa9b77;;
+    border-bottom: 4px solid #aa9b77;
+    transition: all 0.3s;
+    transform: rotate(-45deg);
+}
+.container .filter input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+.container .filter input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+.container .filter input[type="checkbox"]:checked + label:before{
+    border-color: #aa9b77; 
+}
+
+/*@media max-width:1240*/
+@media  (max-width: 1240px){
+.container{
+    padding: 70px 60px;
+    }
+} 
+
+/*@media max-width:980*/  
+@media  (max-width: 980px){
+	.container{
+        padding: 35px 56px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container button{
+        margin-left: 0px;
+    }
+    .container .filter{
+        margin-bottom: 20px;
+    }
+}
+
+/*@media max-width:768*/
+@media  (max-width: 768px){
+    .container{
+        padding: 35px 30px;
+    }
+    
+}
+
+/*@media max-width:480*/
+@media  (max-width: 480px){
+
+    .container .filter{
+        flex-direction: column;
+    }
+    .container .filter label{
+        padding: 10px 43px;
+        margin: 0 43px 5px 0;
+    }
+    input[type="checkbox"] + label:before{
+        width: 20px;
+        height: 20px;
+    }
+    input[type="checkbox"] + label:after{
+        width: 12px;
+        height: 10px;
+    }
+}

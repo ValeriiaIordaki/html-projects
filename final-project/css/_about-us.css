@@ -1,0 +1,59 @@
+/*About us*/
+.about-us{
+    height: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aa9b77;
+}
+.about-us > div{
+    max-width: 710px;
+    border: 2px solid #918363;
+}
+
+.about-us p{
+    padding: 0 120px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-us h2{
+    z-index: 2;
+    color: #837659;
+    font-size: 20px;
+    text-transform: uppercase;
+    transform: translateY(12px);
+    background-color: #aa9b77;
+    padding: 0 12px; 
+}
+
+/*@media max-width:768*/
+@media  (max-width: 768px){
+    .about-us > div{
+       max-width: 520px;
+    }
+   .about-us p{
+        padding: 0 60px;
+    }
+    .about-us > div{
+        margin: 0 20px;
+    }
+}
+
+/*@media max-width:480*/
+@media  (max-width: 480px){
+    .about-us p{
+        padding: 0 15px;
+        font-size: 1.2;    
+    }
+    .about-us > div{
+        margin: 0 10px;
+    }
+}

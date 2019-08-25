@@ -1,0 +1,12 @@
+
+@import '_fonts.css';
+@import '_header-top.css';
+@import '_checkbox.css';
+@import '_products-section.css';
+@import '_adaptation-products-section.css';
+@import '_about-us.css';
+@import '_footer.css';
+
+body{
+    font-family: "QuicksandBold", sans-serif;
+}

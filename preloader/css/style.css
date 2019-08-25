@@ -1,0 +1,106 @@
+
+.section{
+	height: 100vh;
+	background-color: rgba(56, 223, 100, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section .box{
+	position: relative;
+	width: 150px;
+}
+
+.section .box span{
+	font-size: 20px;
+	padding: 5px;
+	color: rgba(34, 139, 34, 0.7);
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+.section .box .circle {
+	position: absolute;
+	top: calc(50% - 20px);
+	right: 20px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #008000;
+	transform-origin: 50% 20px;
+	transform: rotateZ(40deg);
+	animation: circle-1 2s infinite;
+}
+
+.section .box .circle:nth-child(2) {
+	transform: rotateZ(20deg);
+	animation-name: circle-2;
+	animation-delay: 170ms;
+	background-color: #228B22;
+}
+
+.section .box .circle:nth-child(3) {
+	transform: rotateZ(0deg);
+	animation-name: circle-3;
+	animation-delay: 340ms;
+	background-color: #32CD32;
+}
+
+.section .box .circle:nth-child(4) {
+	transform: rotateZ(-20deg);
+	animation-name: circle-4;
+	animation-delay: 510ms;
+	background-color: #7FFF00;
+}
+
+.section .box .circle:nth-child(5) {
+	transform: rotateZ(-40deg);
+	animation-name: circle-5;
+	animation-delay: 680ms;
+	background-color: #ADFF2F;
+}
+
+
+@keyframes circle-1 {
+	0% {
+		transform: rotateZ(40deg) rotateX(10deg);
+	}
+	95%, 100% {
+		transform: rotateZ(400deg) rotateX(10deg);
+		}
+}
+
+@keyframes circle-2 {
+	0% {
+		transform: rotateZ(20deg) rotateX(10deg);
+	}
+	95%, 100% {
+		transform: rotateZ(380deg) rotateX(10deg);
+	}
+}
+
+@keyframes circle-3 {
+	0% {
+		transform: rotateZ(0deg) rotateX(10deg);
+	}
+	95%, 100% {
+		transform: rotateZ(360deg) rotateX(10deg);
+	}
+}
+
+@keyframes circle-4 {
+	0% {
+		transform: rotateZ(-20deg) rotateX(10deg);
+	}
+	95%, 100% {
+		transform: rotateZ(340deg) rotateX(10deg);
+	}
+}
+@keyframes circle-5 {
+	0% {
+		transform: rotateZ(-40deg) rotateX(10deg);
+	}
+	95%, 100% {
+		transform: rotateZ(320deg) rotateX(10deg);
+	}
+}

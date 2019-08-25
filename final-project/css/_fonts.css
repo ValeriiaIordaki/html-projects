@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'QuicksandBold';
+    src: url('../fonts/QuicksandBold.woff') format('woff');
+}
+@font-face{
+    font-family: 'QuicksandBook';
+    src: url('../fonts/QuicksandBook.woff') format('woff');
+}

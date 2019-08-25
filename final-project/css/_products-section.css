@@ -1,0 +1,172 @@
+
+/*Section Men*/
+section.men{
+    padding: 98px 96px 49px;
+}
+section.men > span, section.women > span{
+    display: block;
+    color: #424242;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+section.men > span:after{
+    content: '';
+    margin-left: 52px;
+    height: 2px;
+    width: 100%;
+    background-color: #cccccc;
+}
+/*Women*/
+section.women{
+    padding: 49px 96px 130px;
+}
+section.women > span:before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #cccccc;
+    margin-right: 7px;
+}
+
+/*Configuration carousel for sections Men and Women*/
+.carousel{
+    display: flex;
+}
+.men .carousel{
+    justify-content: flex-end;
+}
+.carousel-link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0 7px;
+}
+.carousel .carousel-link .number-2{
+    display: none;
+}
+.carousel .carousel-link .number-1,.number-2{
+    color: #aa9b77;
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 3px;
+}
+.carousel .carousel-link .switcher{
+    display: flex;
+}
+.carousel .carousel-link .left{
+    height: 12px;
+    width: 12px;
+    background: url('../img/fa-chevron-left.png') no-repeat center/contain;
+    margin-right: 10px;
+}
+.carousel .carousel-link .right{
+    height: 12px;
+    width: 12px;
+    background: url('../img/fa-chevron-right.png') no-repeat center/contain;
+}
+.carousel .carousel-link .left:hover, .right:hover{
+    box-shadow: 0 0 2px #aa9b77;
+}
+
+/*Product*/
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 21px 0;
+}
+.products .product{
+    width: 308px;
+    height: 366px;
+    border-radius: 3px;
+    border: 6px solid transparent;
+    background-color: #f5f6f7;
+    padding: 25px;
+    margin: 10px 10px;
+}
+.products .product:hover{
+    border: 6px solid #aa9b77;
+}
+.products .product .atribut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products .product .atribut p{
+    color: #424242;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.products .product .atribut .size-button{
+    width: 12px;
+    height: 8px;
+    background: url('../img/fa-angle-down.svg') no-repeat center/contain;
+    margin-left: 4px;
+    user-select: none;
+}
+.products .product .atribut .size-button:hover{
+    height: 12px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.products .product .atribut ul{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E2E2E2FF;
+    border: 1px solid #B5B5B5FF;
+}
+.product .atribut li{
+  margin: 5px 0;
+}
+.product .atribut li a{
+    color: #000000;
+}
+.size-button:not(.open) + ul{
+        display: none !important;
+    }
+.men .products .product:nth-child(3) .size-button{
+    display: none;
+}
+.products .product .atribut div.color{
+    display: flex;
+}
+.products .product .atribut div.color label{
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 22px;
+    height: 21px;
+    cursor: pointer;
+}
+.products .product .description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.products .product .description h3{
+    color: #aa9b77;
+    font-size: 18px;
+}
+.products .product .description .price{
+    font-size: 22px;
+    color: #424242;
+}
+.products .product .image{
+    display: block;
+    height: 235px;
+    margin-bottom: 30px;
+    background: no-repeat center;
+}

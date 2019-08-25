@@ -1,0 +1,106 @@
+/*@media max-width:1240*/
+@media  (max-width: 1240px){
+section.men, section.women{
+    padding: 70px 65px 40px;
+    }
+    .products{
+        justify-content: space-around;
+    }
+    .carousel .carousel-link{
+        padding: 50px 30px 7px;
+        
+    }
+    .products .product:last-child{
+        display: none;
+    }
+    .carousel .carousel-link .number-2{
+        display: block;
+    }
+    .carousel .carousel-link .number-1{
+        display: none;
+    }
+}
+
+/*@media max-width:980*/
+@media  (max-width: 980px){
+    section.men, section.women{
+        padding: 60px 40px 35px;
+    }
+}
+
+/*@media max-width:768*/
+@media  (max-width: 768px){
+     section.men, section.women{
+        padding: 50px 30px 30px;
+    }
+    .products .product:nth-child(2){
+        display: none;
+    }
+    .carousel .switcher{
+    justify-content: space-between;
+    }
+    .carousel-link{
+        display: none;
+    }
+    .products{
+        display: flex;
+        align-items: center;
+    }
+    .products .product{
+        padding: 25px 15px;    
+    }
+   .products .product .atribut{
+        padding-bottom: 25px;
+    }    
+    .products .product .image{
+        background-size: contain;
+        margin-bottom: 25px;
+    }
+    .products:hover::before{
+        content: '';
+        position: absolute;
+        left: 40px;
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+        background: url('../img/fa-chevron-left.png') no-repeat center/contain;
+    }
+    .products:hover::after{
+        content: '';
+        position: absolute;
+        right: 40px;
+        height: 15px;
+        width: 15px;
+        margin-left: 5px;
+        background: url('../img/fa-chevron-right.png') no-repeat center/contain;
+    } 
+}
+
+/*@media max-width:480*/
+@media  (max-width: 480px){
+    section.men, section.women{
+        padding: 50px 20px 30px;
+    }
+    section.men span:after{
+        margin-left: 7px;
+    } .atribut{
+        padding-bottom: 25px;
+    }    
+
+    .products .product{
+        border: none;
+    }
+    .products .product .image{
+        background-size: contain;
+        margin-bottom: 25px;
+    }
+    .products:hover .product{
+        border: none;
+    }
+    .products:hover::after{
+        right: 10px;
+    }
+    .products:hover::before{
+        left: 10px;
+    }
+}
